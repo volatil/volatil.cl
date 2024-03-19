@@ -1,3 +1,10 @@
+.body {
+	background: url("../../public/assets/images/home.webp") repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
 .header {
 	background: white;
 	height: 80px;
@@ -55,4 +62,13 @@
 }
 .elboton:hover {
 	background-color: var( --secundario );
+}
+
+@media ( max-width: 800px ) {
+	.contenido h1 {
+		font-size: 3em;
+	}
+	.elboton {
+		width: 180px;
+	}
 }

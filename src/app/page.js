@@ -11,7 +11,7 @@ export default function Home() {
 				<h1>Elaboramos proyectos digitales <span>&</span> móviles con estrategia y amor.</h1>
 				<button className={ css.elboton }>{ CTO }</button>
 			</section>
-			<img className={ css.fondo } src={ images_bg.src } alt={ NOMBRE } />
+			{/* <img className={ css.fondo } src={ images_bg.src } alt={ NOMBRE } /> */}
 		</>
 	);
 }
