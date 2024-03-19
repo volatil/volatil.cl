@@ -2,11 +2,11 @@
 	"compilerOptions": {
 		"paths": {
 			// "@/*": ["./src/*"] ,
-			// "@components/*": ["./src/app/components/*"] ,
 			"@css/*": ["./src/styles/*"] ,
+			"@images/*": ["./public/assets/images/*"] ,
+			// "@components/*": ["./src/app/components/*"] ,
 			// "@helpers/*": ["./src/Helpers/*"] ,
 			// "@svg/*": ["./public/assets/svg/*"] ,
-			// "@images/*": ["./public/assets/images/*"] ,
 			// "@gif/*": ["./public/assets/gif/*"] ,
 			// "@dev/*": ["./src/app/dev/*"] ,
 		}
