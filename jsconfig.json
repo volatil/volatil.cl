@@ -1,7 +1,14 @@
 {
-  "compilerOptions": {
-    "paths": {
-      "@/*": ["./src/*"]
-    }
-  }
+	"compilerOptions": {
+		"paths": {
+			// "@/*": ["./src/*"] ,
+			// "@components/*": ["./src/app/components/*"] ,
+			// "@css/*": ["./src/css/*"] ,
+			// "@helpers/*": ["./src/Helpers/*"] ,
+			// "@svg/*": ["./public/assets/svg/*"] ,
+			// "@images/*": ["./public/assets/images/*"] ,
+			// "@gif/*": ["./public/assets/gif/*"] ,
+			// "@dev/*": ["./src/app/dev/*"] ,
+		}
+	}
 }
