@@ -112,48 +112,58 @@
 	text-align: center;
 	padding: 10px 8%;
 }
-.formulario > form {
+.formulario > .form {
 	width: 100%;
 }
-.formulario > form > div {
+.formulario > .form > div {
 	width: 92%;
 	margin: 10px auto 0;
 	display: flex;
 	flex-direction: column;
 }
-.formulario > form > div > label {
+.formulario > .form > div > label {
 	font-weight: 400;
 	font-size: 1.2em;
 	margin-bottom: 5px;
 }
-.formulario > form > div > input ,
-.formulario > form > div > textarea {
+.formulario > .form > div > input ,
+.formulario > .form > div > textarea {
 	border: 1px solid #aaa;
 	padding: 10px;
 	font-size: 1em;
 	outline: none;
 }
-.formulario > form > div > input::placeholder ,
-.formulario > form > div > textarea::placeholder {
+.formulario > .form > div > input::placeholder ,
+.formulario > .form > div > textarea::placeholder {
 	color: #aaa;
 	font-weight: 400;
 }
-.formulario > form > div > input:focus ,
-.formulario > form > div > textarea:focus {
+.formulario > .form > div > input:focus ,
+.formulario > .form > div > textarea:focus {
 	border: 1px solid var( --primario );
 }
-.formulario > form > div > input {
+.formulario > .form > div > input {
 	height: 50px;
 }
-.formulario > form > div > textarea {
+.formulario > .form > div > textarea {
 	height: 80px;
 }
-.formulario > form > button {
+.formulario > .form > button {
 	text-transform: uppercase;
 	font-size: 1.2em;
 	font-weight: 300;
 	margin-top: 20px;
 	margin-left: 4%;
+}
+.formulario > .form > .estadoenvio {
+	background: #00800040;
+	color: black;
+	width: 92%;
+	margin: 0 auto;
+	border: 1px solid green;
+	border-radius: 6px;
+	margin-top: 10px;
+	padding: 5px 10px;
 }
 
 @media ( max-width: 800px ) {
