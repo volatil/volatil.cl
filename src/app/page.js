@@ -1,9 +1,14 @@
-import { NOMBRE, CTO, TITULO } from "@helpers/textos.js"
+"use client"
+
+import { useState } from "react";
+import { CTO } from "@helpers/textos.js"
 import Header from "./Header";
-import images_bg from "@images/home.webp";
+import Formulario from "./Formulario";
 import css from "@css/page.module.css"
 
 export default function Home() {
+	const [isModalDesplegado, setisModalDesplegado] = useState( true );
+	
 	return (
 		<>
 			<Header />
@@ -11,7 +16,7 @@ export default function Home() {
 				<h1>Elaboramos proyectos digitales <span>&</span> móviles con estrategia y amor.</h1>
 				<button className={ css.elboton }>{ CTO }</button>
 			</section>
-			{/* <img className={ css.fondo } src={ images_bg.src } alt={ NOMBRE } /> */}
+			{ isModalDesplegado ? <Formulario /> : null }
 		</>
 	);
 }
