@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+	// HABILITAR PARA [BUILD DEPLOY]
+	output: "export",
+	// DATA SENSIBLE
 	env: {
 		SMTPJS_HOST: "smtp.elasticemail.com" ,
 		SMTPJS_USERNAME: "contacto@volatil.cl",

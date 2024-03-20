@@ -173,4 +173,13 @@
 	.elboton {
 		width: 180px;
 	}
+	.formulario {
+		width: 90%;
+		top: 20px;
+	}
+	.formulario > .form > button {
+		margin: 20px auto 0;
+		display: block;
+		width: auto;
+	}
 }
