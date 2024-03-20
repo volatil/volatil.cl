@@ -7,16 +7,22 @@ import Formulario from "./Formulario";
 import css from "@css/page.module.css"
 
 export default function Home() {
-	const [isModalDesplegado, setisModalDesplegado] = useState( true );
+	const [isModalDesplegado, setisModalDesplegado] = useState( false );
+	const desplegarmodal = function(){
+		setisModalDesplegado( !isModalDesplegado );
+	}
+	const traeState = function( estado ) {
+		setisModalDesplegado( estado )
+	}
 	
 	return (
 		<>
-			<Header />
+			<Header traeState={ traeState } />
 			<section className={ css.contenido }>
 				<h1>Elaboramos proyectos digitales <span>&</span> móviles con estrategia y amor.</h1>
-				<button className={ css.elboton }>{ CTO }</button>
+				<button onClick={ desplegarmodal } className={ css.elboton }>{ CTO }</button>
 			</section>
-			{ isModalDesplegado ? <Formulario /> : null }
+			{ isModalDesplegado ? <Formulario traeState={ traeState } /> : null }
 		</>
 	);
 }
